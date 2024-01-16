@@ -2,10 +2,13 @@
 <html>
   <head>
     <script>
-    var isChrome = window.chrome !== null && typeof window.chrome !== 'undefined';
-    if (isChrome) {
-        window.location.href = 'redirection.html';
-    }
+    // Vérifier si le navigateur est Google Chrome
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
+// Rediriger si le navigateur est Google Chrome
+if (isChrome) {
+  window.location.href = "redirection.html";
+}
 </script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script>
