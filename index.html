@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+    var isChrome = window.chrome !== null && typeof window.chrome !== 'undefined';
+    if (isChrome) {
+        window.location.href = 'redirection.html';
+    }
+</script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script>
     var isChrome = window.chrome !== null && typeof window.chrome !== 'undefined';
